@@ -50,6 +50,6 @@
     "vue": "^2.6.11"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   }
 }
