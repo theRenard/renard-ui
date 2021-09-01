@@ -2,6 +2,8 @@
   <div id="app">
     <RButton @click="test" />
     <RCode :code="code" />
+    <RInput v-model="inputValue" />
+    <div>{{ inputValue }}</div>
   </div>
 </template>
 
@@ -9,11 +11,13 @@
 import { Component, Vue } from 'vue-property-decorator';
 import Button from './components/Button/Button.vue';
 import Code from './components/Code/Code.vue';
+import Input from './components/Input/Input.vue';
 
 @Component({
   components: {
     RButton: Button,
     RCode: Code,
+    RInput: Input,
   },
 })
 export default class App extends Vue {
@@ -34,6 +38,8 @@ export default class App extends Vue {
       }
     }
   `
+
+  inputValue = '';
 
   test(): void {
     console.log(this, 'test');
