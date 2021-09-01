@@ -11,7 +11,7 @@ export default class Index extends Vue {
   render(): Vue.VNode {
     return (
       <button
-        class={`${this.btnStyle} r-button`}
+        class={`r-button ${this.btnStyle}`.trim()}
         {...{ on: this.$listeners }}
         {...{ attrs: this.$attrs }}
         >{this.$slots.default || 'Button'}</button>
