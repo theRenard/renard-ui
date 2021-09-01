@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import Button from '@/components/Button.vue';
+import Button from '@/components/Button/Button.vue';
 
 const Components = {
   Button,
