@@ -1,4 +1,7 @@
 # renard-ui
+```
+UI Library for my personal website
+```
 
 ## Project setup
 ```
