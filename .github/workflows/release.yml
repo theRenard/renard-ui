@@ -16,10 +16,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14.17.6'
-      - name: Install dependencies
-        run: yarn ci
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn semantic-release
+        run: yarn ci && yarn semantic-release
