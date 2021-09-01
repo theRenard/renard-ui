@@ -1,5 +1,4 @@
-/* eslint-disable no-template-curly-in-string */
-export default {
+{
   plugins: [
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
@@ -8,4 +7,4 @@ export default {
       message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
     }],
   ],
-};
+}
