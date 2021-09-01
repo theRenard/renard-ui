@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/theRenard/renard-ui/compare/v1.3.2...v1.3.3) (2021-09-01)
+
+
+### Bug Fixes
+
+* **CI:** ci again ([b2fb69e](https://github.com/theRenard/renard-ui/commit/b2fb69e1325b20b3d2746c56d92e88174261d06b))
+
 ## [1.3.2](https://github.com/theRenard/renard-ui/compare/v1.3.1...v1.3.2) (2021-09-01)
 
 
