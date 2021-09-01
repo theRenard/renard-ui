@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: '14.17.6'
       - name: Install dependencies
-        run: yarn
+        run: yarn ci
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

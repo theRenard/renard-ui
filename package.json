@@ -7,6 +7,7 @@
     "build": "vue-cli-service build",
     "build-bundle": "vue-cli-service build --target lib --name renard-ui ./src/components/index.js",
     "lint": "vue-cli-service lint",
+    "ci": "yarn && yarn lint && yarn test && yarn build-bundle",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -22,6 +23,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@semantic-release/git": "^9.0.0",
     "@tailwindcss/forms": "^0.3.3",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
