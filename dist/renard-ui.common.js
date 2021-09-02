@@ -4974,15 +4974,8 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom-collections.for-each.js
-var web_dom_collections_for_each = __webpack_require__("159b");
-
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.keys.js
 var es_object_keys = __webpack_require__("b64b");
-
-// EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
-var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
-var external_commonjs_vue_commonjs2_vue_root_Vue_default = /*#__PURE__*/__webpack_require__.n(external_commonjs_vue_commonjs2_vue_root_Vue_);
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.symbol.js
 var es_symbol = __webpack_require__("a4d3");
@@ -4992,6 +4985,9 @@ var es_array_filter = __webpack_require__("4de4");
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.get-own-property-descriptor.js
 var es_object_get_own_property_descriptor = __webpack_require__("e439");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom-collections.for-each.js
+var web_dom_collections_for_each = __webpack_require__("159b");
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.get-own-property-descriptors.js
 var es_object_get_own_property_descriptors = __webpack_require__("dbb4");
@@ -5399,6 +5395,10 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
     privateMap.set(receiver, value);
     return value;
 }
+
+// EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
+var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
+var external_commonjs_vue_commonjs2_vue_root_Vue_default = /*#__PURE__*/__webpack_require__.n(external_commonjs_vue_commonjs2_vue_root_Vue_);
 
 // CONCATENATED MODULE: ./node_modules/vue-class-component/dist/vue-class-component.esm.js
 /**
@@ -6491,7 +6491,7 @@ var Input_component = normalizeComponent(
 )
 
 /* harmony default export */ var Input = (Input_component.exports);
-// CONCATENATED MODULE: ./src/components/index.js
+// CONCATENATED MODULE: ./src/components/index.ts
 
 
 
@@ -6503,10 +6503,16 @@ var Components = {
   Code: Code,
   Input: Input
 };
-Object.keys(Components).forEach(function (name) {
-  external_commonjs_vue_commonjs2_vue_root_Vue_default.a.component(name, Components[name]);
-});
-/* harmony default export */ var components = (Components);
+
+var install = function install(_Vue) {
+  Object.keys(Components).forEach(function (name) {
+    _Vue.component(name, Components[name]);
+  });
+};
+
+/* harmony default export */ var components = (_objectSpread2({
+  install: install
+}, Components));
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
