@@ -6,7 +6,7 @@ import 'prismjs/themes/prism-tomorrow.css';
 @Component({
   name: 'RCode',
 })
-export default class Index extends Vue {
+export default class Code extends Vue {
   @Prop({ default: '', type: String })
   code!: string;
 
