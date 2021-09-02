@@ -1,15 +1,15 @@
 import { VueConstructor } from 'vue';
-import Button from '@/components/Button/Button.vue';
-import Code from '@/components/Code/Code.vue';
-import Input from '@/components/Input/Input.vue';
+import RButton from '@/components/Button/Button.vue';
+import RCode from '@/components/Code/Code.vue';
+import RInput from '@/components/Input/Input.vue';
 
 const Components = {
-  Button,
-  Code,
-  Input,
+  RButton,
+  RCode,
+  RInput,
 };
 
-export type Components = typeof Components;
+type Components = typeof Components;
 
 const install = (_Vue: VueConstructor): void => {
   Object.keys(Components).forEach((name) => {
@@ -17,7 +17,9 @@ const install = (_Vue: VueConstructor): void => {
   });
 };
 
-export default {
+export {
   install,
-  ...Components,
+  RButton,
+  RCode,
+  RInput,
 };

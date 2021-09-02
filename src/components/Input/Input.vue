@@ -5,7 +5,7 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 @Component({
   name: 'RInput',
 })
-export default class Input extends Vue {
+export default class RInput extends Vue {
   @Prop({ default: 'input', type: String })
   controlType!: 'input' | 'textarea';
 

@@ -16,6 +16,14 @@
     "type": "git",
     "url": "https:git@github.com:theRenard/renard-ui.git"
   },
+  "main": "dist/renard-ui.common.js",
+  "files": [
+    "src",
+    "assets",
+    "dist/*.{js,css}",
+    "types/*"
+  ],
+  "types": "./types/index.d.ts",
   "dependencies": {
     "@types/prismjs": "^1.16.6",
     "core-js": "^3.6.5",
@@ -53,7 +61,7 @@
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11"
   },
-  "main": "./dist/renard-ui.common.js",
+  "style": "dist/renard-ui.css",
   "peerDependencies": {
     "vue": "^2.6.11"
   },

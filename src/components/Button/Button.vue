@@ -4,7 +4,7 @@ import { Component, Vue, Prop } from 'vue-property-decorator';
 @Component({
   name: 'RButton',
 })
-export default class Button extends Vue {
+export default class RButton extends Vue {
   @Prop({ default: '', type: String })
   btnStyle!: string;
 
